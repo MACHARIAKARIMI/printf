@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * get_flags - Calculates active flags
+ * goget0s_flags - calculates active flags
  * authored by macharia and owiti
- * @format: Formatted string in which to print the arguments
- * @i: take a parameter.
- * Return: Flags:
+ * @format: formatted string in which to print the arguments
+ * @i: Take a parameter.
+ * Return: flags:
  */
-int get_flags(const char *format, int *i)
+int goget0s_flags(const char *format, int *i)
 {
 	/* - + 0 # ' ' */
 	/* 1 2 4 8  16 */
@@ -33,3 +33,4 @@ int get_flags(const char *format, int *i)
 
 	return (flags);
 }
+
