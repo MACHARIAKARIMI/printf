@@ -2,7 +2,7 @@
 
 /************************* PRINT UNSIGNED NUMBER *************************/
 /**
- * iprint_unsigned - Prints an unsigned number
+ * print_unsigned - Prints an unsigned number
  * authored by macharia and owiti
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
@@ -12,7 +12,7 @@
  * @size: Size specifier
  * Return: Number of chars printed.
  */
-int iprint_unsigned(va_list types, char buffer[],
+int print_unsigned(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
@@ -38,7 +38,7 @@ int iprint_unsigned(va_list types, char buffer[],
 
 /************* PRINT UNSIGNED NUMBER IN OCTAL  ****************/
 /**
- * weprint_octal - prints an unsigned number in octal notation
+ * print_octal - prints an unsigned number in octal notation
  * @types: lista of arguments
  * @buffer: buffer array to handle print
  * @flags:  Calculates active flags
@@ -47,7 +47,7 @@ int iprint_unsigned(va_list types, char buffer[],
  * @size: Size specifier
  * return: number of chars printed
  */
-int weprint_octal(va_list types, char buffer[],
+int print_octal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 
@@ -80,7 +80,7 @@ int weprint_octal(va_list types, char buffer[],
 
 /************** PRINT UNSIGNED NUMBER IN HEXADECIMAL **************/
 /**
- * iprint_anhexadecimal - Prints an unsigned number in hexadecimal notation
+ * print_hexadecimal - Prints an unsigned number in hexadecimal notation
  * @types: lista of arguments
  * @buffer: buffer array to handle print
  * @flags:  calculates active flags
@@ -89,7 +89,7 @@ int weprint_octal(va_list types, char buffer[],
  * @size: size specifier
  * Return: number of chars printed
  */
-int iprint_anhexadecimal(va_list types, char buffer[],
+int print_hexadecimal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	return (print_hexa(types, "0123456789abcdef", buffer,
@@ -98,7 +98,7 @@ int iprint_anhexadecimal(va_list types, char buffer[],
 
 /************* PRINT UNSIGNED NUMBER IN UPPER HEXADECIMAL **************/
 /**
- * iprint_anhexa_upper - Prints an unsigned number in upper hexadecimal notation
+ * print_hexa_upper - Prints an unsigned number in upper hexadecimal notation
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
@@ -107,7 +107,7 @@ int iprint_anhexadecimal(va_list types, char buffer[],
  * @size: size specifier
  * Return: number of chars printed
  */
-int iprint_anhexa_upper(va_list types, char buffer[],
+int print_hexa_upper(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	return (print_hexa(types, "0123456789ABCDEF", buffer,
@@ -116,7 +116,7 @@ int iprint_anhexa_upper(va_list types, char buffer[],
 
 /************** PRINT HEXX NUM IN LOWER OR UPPER **************/
 /**
- * iprint_anhexa - prints a hexadecimal number in lower or upper
+ * print_hexa - prints a hexadecimal number in lower or upper
  * @types: Lista of arguments
  * @map_to: Array of values to map the number to
  * @buffer: Buffer array to handle print
@@ -128,7 +128,7 @@ int iprint_anhexa_upper(va_list types, char buffer[],
  * @size: Size specification
  * Return: Number of chars printed
  */
-int iprint_anhexa(va_list types, char map_to[], char buffer[],
+int print_hexa(va_list types, char map_to[], char buffer[],
 	int flags, char flag_ch, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;

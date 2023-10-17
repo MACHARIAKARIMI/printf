@@ -15,13 +15,13 @@ int itis_printable(char c)
 }
 
 /**
- * happends_hexa_code - Append ascci in hexadecimal code to buffer
+ * appends_hexa_code - Append ascci in hexadecimal code to buffer
  * @buffer: Array of chars.
  * @i: Index at which to start appending.
  * @ascii_code: ASSCI CODE.
  * Return: Always 3
  */
-int happends_hexa_code(char ascii_code, char buffer[], int i)
+int appends_hexa_code(char ascii_code, char buffer[], int i)
 {
 	char map_to[] = "0123456789ABCDEF";
 	/* The hexa format code is always 2 digits long */
@@ -38,12 +38,12 @@ int happends_hexa_code(char ascii_code, char buffer[], int i)
 }
 
 /**
- * its_digit - verifies if a char is a digit
+ * is_digit - verifies if a char is a digit
  * @c: Char to be evaluated
  *
  * Return: 1 if c is a digit, 0 otherwise
  */
-int its_digit(char c)
+int is_digit(char c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
@@ -84,3 +84,4 @@ long int convertes_size_unsgnd(unsigned long int num, int size)
 
 	return ((unsigned int)num);
 }
+

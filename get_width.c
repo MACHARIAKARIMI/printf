@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * gets_width - calculetes The width for printing
+ * get_width - calculetes The width for printing
  * authored by macharia and owiti
  * @format: formatted string in which to print the arguments.
  * @i: list of arguments to be printed.
@@ -9,7 +9,7 @@
  *
  * Return: width.
  */
-int gets_width(const char *format, int *i, va_list list)
+int get_width(const char *format, int *i, va_list list)
 {
 	int curr_i;
 	int width = 0;

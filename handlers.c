@@ -2,7 +2,7 @@
 
 /************************* WRITE HANDLE *************************/
 /**
- * ihandle_write_char - prints a string
+ * handle_write_char - prints a string
  * authored by macharia and owiti
  * @c: char types.
  * @buffer: Buffer array to handle print
@@ -13,7 +13,7 @@
  *
  * Return: Number of chars printed.
  */
-int ihandle_write_char(char c, char buffer[],
+int handle_write_char(char c, char buffer[],
 	int flags, int width, int precision, int size)
 { /* char is stored at left and paddind at buffer's right */
 	int i = 0;
@@ -58,7 +58,7 @@ int ihandle_write_char(char c, char buffer[],
  *
  * Return: Namber of chars printed.
  */
-int wewrite_number(int is_negative, int ind, char buffer[],
+int write_number(int is_negative, int ind, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int length = BUFF_SIZE - ind - 1;
@@ -92,7 +92,7 @@ int wewrite_number(int is_negative, int ind, char buffer[],
  *
  * Return: Number of printed chars.
  */
-int iwrite_num(int ind, char buffer[],
+int write_num(int ind, char buffer[],
 	int flags, int width, int prec,
 	int length, char padd, char extra_c)
 {
@@ -150,7 +150,7 @@ int iwrite_num(int ind, char buffer[],
  *
  * Return: Number of written chars.
  */
-int hewrite_unsgnd(int is_negative, int ind,
+int write_unsgnd(int is_negative, int ind,
 	char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -209,7 +209,7 @@ int hewrite_unsgnd(int is_negative, int ind,
  *
  * Return: Number of written chars.
  */
-int iwrites_pointer(char buffer[], int ind, int length,
+int write_pointer(char buffer[], int ind, int length,
 	int width, int flags, char padd, char extra_c, int padd_start)
 {
 	int i;

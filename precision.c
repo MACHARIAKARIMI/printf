@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * itgets_aprecision - calculates the precision for printing
+ * get_precision - calculates the precision for printing
  * authored by macharia and owiti
  * @format: formatted string in which to print the arguments
  * @i: list of arguments to be printed.
@@ -9,7 +9,7 @@
  *
  * Return: precision.
  */
-int itgets_aprecision(const char *format, int *i, va_list list)
+int get_precision(const char *format, int *i, va_list list)
 {
 	int curr_i = *i + 1;
 	int precision = -1;
@@ -40,3 +40,4 @@ int itgets_aprecision(const char *format, int *i, va_list list)
 
 	return (precision);
 }
+
