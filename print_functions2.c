@@ -2,7 +2,7 @@
 
 /****************** PRINT POINTER ******************/
 /**
- * weprint_pointer - Prints the value of a pointer variable
+ * print_pointer - Prints the value of a pointer variable
  * authored by macharia and owiti
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
@@ -55,7 +55,7 @@ int print_pointer(va_list types, char buffer[],
 
 /************************* PRINT NON PRINTABLE *************************/
 /**
- * iprint_non_printable - prints ascii codes in hexa of non printable chars
+ * print_non_printable - prints ascii codes in hexa of non printable chars
  * authored by macharia and owiti
  * @types: Lista of arguments
  * @buffer: buffer array to handle print
@@ -96,7 +96,7 @@ int print_non_printable(va_list types, char buffer[],
 
 /************************* PRINT REVERSE *************************/
 /**
- * itprints_reverse - prints reverse string.
+ * prints_reverse - prints reverse string.
  * authored by macharia and owiti
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
@@ -140,7 +140,7 @@ int print_reverse(va_list types, char buffer[],
 }
 /************************* PRINT A STRING IN ROT13 *************************/
 /**
- * printinng_rot13string - Print a string in rot13.
+ * print_rot13string - Print a string in rot13.
  * authored by macharia and owiti
  * @types: Lista of arguments
  * @buffer: buffer array to handle print
